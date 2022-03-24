@@ -9,7 +9,8 @@ public class PolygonDungeonOnlineTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
+		bUsesSteam = true;
+		ExtraModuleNames.AddRange( new string[] { "PolygonDungeonOnline", "AdvancedSessions", "AdvancedSteamSessions", "OnlineSubsystem", "OnlineSubsystemSteam" } );
 
-		ExtraModuleNames.AddRange( new string[] { "PolygonDungeonOnline" } );
 	}
 }

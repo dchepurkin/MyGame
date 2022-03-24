@@ -8,13 +8,14 @@ public class PolygonDungeonOnline : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AdvancedSessions", "AdvancedSteamSessions", "OnlineSubsystem"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+		DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
